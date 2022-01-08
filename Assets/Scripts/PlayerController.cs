@@ -10,8 +10,9 @@ public class PlayerController : MonoBehaviour
     [SerializeField] private Vector2 jumpHeight;
     [SerializeField] private float positionRadius;
     [SerializeField] private Transform playerPos;
+    [SerializeField] private LayerMask layerMask;
     private Animator animator;
-    private bool isOnGround;
+    [SerializeField] private bool isOnGround;
     private bool isJumping = false;
     private Vector2 moveDirection = Vector2.zero;
     
@@ -41,7 +42,9 @@ public class PlayerController : MonoBehaviour
             moveDirection = Vector2.zero;
         }
 
-        isOnGround = Physics2D.OverlapCircle(playerPos.position, positionRadius);
+        isOnGround = Physics2D.OverlapCircle(playerPos.position, positionRadius, layerMask);
+        print(Physics2D.OverlapCircle(playerPos.position, positionRadius, layerMask));
+        print(positionRadius);
         if(Input.GetKeyDown(KeyCode.Space))
         {
             if(isOnGround)
