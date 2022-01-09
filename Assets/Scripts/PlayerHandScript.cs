@@ -27,10 +27,24 @@ public class PlayerHandScript : MonoBehaviour
         if(isHolding)
         {
             Rigidbody2D collidedBody = collision.transform.GetComponent<Rigidbody2D>();
-            if(collidedBody != null)
+
+            /*tempJoint = transform.gameObject.AddComponent(typeof(FixedJoint2D)) as FixedJoint2D;
+            
+            if (collidedBody != null)
             {
-                tempJoint = transform.gameObject.AddComponent(typeof(FixedJoint2D)) as FixedJoint2D;
-                tempJoint.connectedBody = collidedBody;
+                if (tempJoint == null)
+                {
+                    tempJoint.connectedBody = collidedBody;
+                }
+            }*/
+
+            if (collidedBody != null)
+            {
+                if (tempJoint == null)
+                {
+                    tempJoint = transform.gameObject.AddComponent(typeof(FixedJoint2D)) as FixedJoint2D;
+                    tempJoint.connectedBody = collidedBody;
+                }
             }
             else
             {
