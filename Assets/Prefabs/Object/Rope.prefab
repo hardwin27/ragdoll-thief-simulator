@@ -990,7 +990,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a56f57b88f9f1a242ae62797dfc10d23, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ropeAnchor: {fileID: 4986815970800205446}
+  ropeAnchorBody: {fileID: 4986815970800205444}
   isMoving: 0
   minPosition: {x: 0, y: 0, z: 0}
   maxPosition: {x: 0, y: 0, z: 0}
