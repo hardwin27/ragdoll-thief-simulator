@@ -21,7 +21,6 @@ public class Timer : MonoBehaviour
 
     private void BeginTimer()
     {
-        print("YES");
         isTimerOn = true;
         timePassed = 0.0f;
 
