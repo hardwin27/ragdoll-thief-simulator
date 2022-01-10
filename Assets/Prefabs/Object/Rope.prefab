@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 4986815969725835069}
   - component: {fileID: 4986815969725835070}
   - component: {fileID: 4986815969725835071}
-  m_Layer: 6
+  m_Layer: 7
   m_Name: Chain (7)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -169,7 +169,7 @@ GameObject:
   - component: {fileID: 4986815969745602937}
   - component: {fileID: 4986815969745602938}
   - component: {fileID: 4986815969745602939}
-  m_Layer: 6
+  m_Layer: 7
   m_Name: Chain (5)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -325,7 +325,7 @@ GameObject:
   - component: {fileID: 4986815969792959426}
   - component: {fileID: 4986815969792959427}
   - component: {fileID: 4986815969792959452}
-  m_Layer: 6
+  m_Layer: 7
   m_Name: Chain (4)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -481,7 +481,7 @@ GameObject:
   - component: {fileID: 4986815969887821069}
   - component: {fileID: 4986815969887821070}
   - component: {fileID: 4986815969887821071}
-  m_Layer: 6
+  m_Layer: 7
   m_Name: Chain (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -637,7 +637,7 @@ GameObject:
   - component: {fileID: 4986815970047720450}
   - component: {fileID: 4986815970047720451}
   - component: {fileID: 4986815970047720476}
-  m_Layer: 6
+  m_Layer: 7
   m_Name: Chain (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -793,7 +793,7 @@ GameObject:
   - component: {fileID: 4986815970376884733}
   - component: {fileID: 4986815970376884734}
   - component: {fileID: 4986815970376884735}
-  m_Layer: 6
+  m_Layer: 7
   m_Name: Chain (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -946,7 +946,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4986815970688549740}
   - component: {fileID: 3403740625312237707}
-  m_Layer: 6
+  m_Layer: 7
   m_Name: Rope
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -992,6 +992,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ropeAnchorBody: {fileID: 4986815970800205444}
   isMoving: 0
+  moveDirection: 0
   minPosition: {x: 0, y: 0, z: 0}
   maxPosition: {x: 0, y: 0, z: 0}
   moveSpeed: 0
@@ -1008,7 +1009,7 @@ GameObject:
   - component: {fileID: 4986815970800205451}
   - component: {fileID: 4986815970800205444}
   - component: {fileID: 4986815970800205445}
-  m_Layer: 6
+  m_Layer: 7
   m_Name: ConveyorFront
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1141,7 +1142,7 @@ GameObject:
   - component: {fileID: 4986815970949356350}
   - component: {fileID: 4986815970949356351}
   - component: {fileID: 51663696378280064}
-  m_Layer: 6
+  m_Layer: 7
   m_Name: Chain
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1315,7 +1316,7 @@ GameObject:
   - component: {fileID: 4986815970978672813}
   - component: {fileID: 4986815970978672814}
   - component: {fileID: 4986815970978672815}
-  m_Layer: 6
+  m_Layer: 7
   m_Name: Chain (6)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1469,8 +1470,7 @@ GameObject:
   - component: {fileID: 4986815971336071408}
   - component: {fileID: 4986815971336071413}
   - component: {fileID: 4986815971336071414}
-  - component: {fileID: 4986815971336071415}
-  m_Layer: 6
+  m_Layer: 7
   m_Name: ConveyorBack
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1563,32 +1563,6 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
---- !u!61 &4986815971336071415
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4986815971336071409}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1, y: 1}
-    newSize: {x: 1, y: 1}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 1, y: 1}
-  m_EdgeRadius: 0
 --- !u!1 &4986815971390140516
 GameObject:
   m_ObjectHideFlags: 0
@@ -1602,7 +1576,7 @@ GameObject:
   - component: {fileID: 4986815971390140520}
   - component: {fileID: 4986815971390140521}
   - component: {fileID: 4986815971390140522}
-  m_Layer: 6
+  m_Layer: 7
   m_Name: Chain (8)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
