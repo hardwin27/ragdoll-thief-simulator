@@ -6,7 +6,6 @@ using UnityEngine.UI;
 
 public class Timer : MonoBehaviour
 {
-    public static Timer instance;
     [SerializeField] private Text timerText;
     private TimeSpan timePlaying;
     private bool isTimerOn;
