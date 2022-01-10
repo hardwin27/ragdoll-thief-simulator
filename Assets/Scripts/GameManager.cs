@@ -45,5 +45,9 @@ public class GameManager : MonoBehaviour
     public void AddAlertBar(float alertValue)
     {
         alertBar.value += alertValue;
+        if(alertBar.value >= alertBar.maxValue)
+        {
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+        }
     }
 }

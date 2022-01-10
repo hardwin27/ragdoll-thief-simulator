@@ -7,7 +7,7 @@ public class InGameUI : MonoBehaviour
     private static InGameUI inGameUiInstance;
     private void Awake()
     {
-        DontDestroyOnLoad(gameObject);
+        /*DontDestroyOnLoad(gameObject);
 
         if (inGameUiInstance == null)
         {
@@ -16,6 +16,16 @@ public class InGameUI : MonoBehaviour
         else
         {
             Destroy(inGameUiInstance.gameObject);
+        }*/
+
+        if(inGameUiInstance == null)
+        {
+            inGameUiInstance = this;
+            DontDestroyOnLoad(gameObject);
+        }
+        else if(inGameUiInstance != this)
+        {
+            Destroy(gameObject);
         }
     }
 }
