@@ -6,6 +6,11 @@ public class PhysicalObject : MonoBehaviour
 {
     protected virtual void OnCollisionEnter2D(Collision2D collision)
     {
-        GameManager.Instance.AddAlertBar(collision.relativeVelocity.sqrMagnitude);
+        float addValue = Mathf.Clamp(collision.relativeVelocity.sqrMagnitude, 0, 5000);
+        GameManager.Instance.AddAlertBar(addValue);
+        if(addValue >= 100)
+        {
+            AudioManager.Instance.PlaySfx();
+        }
     }
 }
