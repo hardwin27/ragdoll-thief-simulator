@@ -18,6 +18,12 @@ EditorBuildSettings:
     path: Assets/Scenes/FixLevel/Level3HoldingOn.unity
     guid: 3bb79e880b8603b4c9d20ebd66a2f9cf
   - enabled: 1
+    path: Assets/Scenes/FixLevel/Level4SwingUp.unity
+    guid: 7ef03f91a99e96446bf95d1453dabc5a
+  - enabled: 1
+    path: Assets/Scenes/FixLevel/Level5ButtonCombination.unity
+    guid: 1e5d204240165764d8e138a4f4a23ee1
+  - enabled: 1
     path: Assets/Scenes/MenuScene/EndScene.unity
     guid: ee751955f87be764c88d0d54e988a2b8
   m_configObjects: {}
