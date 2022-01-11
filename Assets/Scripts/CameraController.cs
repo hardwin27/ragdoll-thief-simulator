@@ -4,10 +4,20 @@ using UnityEngine;
 
 public class CameraController : MonoBehaviour
 {
-    [SerializeField] private Transform player;
+    private Transform player;
+
+    private void Start()
+    {
+        player = GameObject.Find("Player").transform.Find("Hip").transform;
+    }
 
     private void Update()
     {
+        if(player == null)
+        {
+            print("LOL");
+            return;
+        }
         transform.position = new Vector3(player.position.x, player.position.y, transform.position.z);
     }
 }
