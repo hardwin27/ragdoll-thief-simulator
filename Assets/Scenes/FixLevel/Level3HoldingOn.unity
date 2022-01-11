@@ -486,6 +486,10 @@ PrefabInstance:
       propertyPath: m_ConnectedAnchor.y
       value: -0.8170835
       objectReference: {fileID: 0}
+    - target: {fileID: 1941494846451828349, guid: 980ec173c5dc45b47bf0477244146943, type: 3}
+      propertyPath: m_ConnectedAnchor.x
+      value: 0.014392853
+      objectReference: {fileID: 0}
     - target: {fileID: 1941494846473910813, guid: 980ec173c5dc45b47bf0477244146943, type: 3}
       propertyPath: m_RootOrder
       value: 1
