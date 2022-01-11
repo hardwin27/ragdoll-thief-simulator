@@ -8,5 +8,9 @@ public class PhysicalObject : MonoBehaviour
     {
         float addValue = Mathf.Clamp(collision.relativeVelocity.sqrMagnitude, 0, 5000);
         GameManager.Instance.AddAlertBar(addValue);
+        if(addValue >= 100)
+        {
+            AudioManager.Instance.PlaySfx();
+        }
     }
 }
